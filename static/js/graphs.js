@@ -7,6 +7,8 @@ function makeGraphs(error, battles) {
 
   show_region_of_battle(ndx);
   show_battles_fought(ndx);
+  show_size_of_attacker(ndx);
+  show_size_of_defender(ndx);
 
   dc.renderAll();
 }
@@ -20,7 +22,7 @@ function show_region_of_battle(ndx) {
     .group(group);
 }
 
-// show gender balance as a bar chart
+// show number of battles fought as a bar chart
 function show_battles_fought(ndx) {
   var dim = ndx.dimension(dc.pluck("year"));
   var group = dim.group();
@@ -40,6 +42,31 @@ function show_battles_fought(ndx) {
     .ticks(5);
 }
 
+// show attacker house size as a pie chart
+function show_size_of_attacker(ndx) {
+  var win_dim = ndx.dimension(dc.pluck("attacker_1"));
+  var total_wins = win_dim.group().reduceSum(dc.pluck("attacker_size"));
+
+  dc.pieChart("#attacker_size")
+    .height(300)
+    .radius(130)
+    .dimension(win_dim)
+    .group(total_wins)
+    .transitionDuration(500);
+}
+
+// show defenders house size as a pie chart
+function show_size_of_defender(ndx) {
+  var win_dim = ndx.dimension(dc.pluck("defender_1"));
+  var total_wins = win_dim.group().reduceSum(dc.pluck("defender_size"));
+
+  dc.pieChart("#defender_size")
+    .height(300)
+    .radius(130)
+    .dimension(win_dim)
+    .group(total_wins)
+    .transitionDuration(500);
+}
 // reload page when button clicked to reset charts
 function reloadCharts() {
   window.location.reload();

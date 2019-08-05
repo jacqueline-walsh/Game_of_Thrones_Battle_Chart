@@ -123,22 +123,29 @@
       <!-- section contains 3 x bar charts -->
       <section class="section">
         <div class="container">
+          <!-- button mid section to reload charts -->
+            <div id="reload-button">
+              <button type="submit" class="btn btn-success" onClick="reloadCharts()">Reload Charts
+              </button>
+            </div>
           <div class="row">
-            <!-- title for gender balance bar chart -->
+            <!-- title for Number of battles fought bar chart -->
             <div class="col-xs-12 col-sm-4 text-center">
               <h3 class="section-paragraph">
                 Number of battles fought over the years
               </h3>
               <p>Information is based over a 3 year period from 298 - 300</p>
             </div>
-            <!-- title for 2nd chard chart -->
+            <!-- title for Attacker House Size pie chart -->
             <div class="col-xs-12 col-sm-4 text-center">
-
-              </p>
+              <h3>Attacker Size</h3>
+              <p>This pie chart to show the size of the house on the attack</p>
             </div>
-            <!-- title for 3rd chart -->
+            <!-- title for Defender House Size pie chart  -->
             <div class="col-xs-12 col-sm-4 text-center">
-
+              <h3>Defender Size</h3>
+              <p>This pie chart to show the size of the house on the defensive</p>
+              </div>
             </div>
           </div>
 
@@ -149,16 +156,16 @@
               id="battles_fought"
               class="custom-chart"
             ></div>
-            <!-- chart number 2 -->
+            <!-- pie chart for size of attackers -->
             <div
               class="col-xs-12 col-sm-4 text-center"
-              id="chart_no2"
+              id="attacker_size"
               class="custom-chart"
             ></div>
-            <!-- chart number 3 -->
+            <!-- pie chart for size of attackers -->
             <div
               class="col-xs-12 col-sm-4 text-center"
-              id="chart_no3"
+              id="defender_size"
               class="custom-chart"
             ></div>
           </div>
