@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/dc.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+
+    <script type="text/javascript" src="static/js/d3.min.js"></script>
+    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="static/js/dc.min.js"></script>
+    <script type="text/javascript" src="static/js/queue.min.js"></script>
+    <script type="text/javascript" src="static/js/graphs.js"></script>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Game of Thones</a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <section class="wave header-section"></section>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-heading">Game of Thrones - Battles</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Context</h3>
+              <p>
+                Game of Thrones is a hit fantasy tv show based on the equally
+                famous book series "A Song of Fire and Ice" by George RR Martin.
+                The show is well known for its vastly complicated political
+                landscape, large number of characters, and its frequent
+                character deaths.
+              </p>
+              <img src="/static/images/battle.gif" alt="battle sceen" class="img-fluid" width="100%">
+            </div>
+            <div class="col-md-4">
+              <h3>Content</h3>
+              <p>
+                Of course, it goes without saying that this dataset contains
+                spoilers ;)
+              </p>
+              <p>
+                This dataset combines three sources of data, all of which are
+                based on information from the book series.
+              </p>
+              <ul>
+                <li>
+                  Firstly, there is battles.csv which contains Chris Albon's
+                  "The War of the Five Kings" Dataset. Its a great collection of
+                  all of the battles in the series.
+                </li>
+                <li>
+                  Secondly we have character-deaths.csv from Erin Pierce and Ben
+                  Kahle. This dataset was created as a part of their Bayesian
+                  Survival Analysis.
+                </li>
+                <li>
+                  Finally we have a more comprehensive character dataset with
+                  character-predictions.csv. It includes their predictions on
+                  which character will die.
+                </li>
+              </ul>
+              </div>
+            <div class="col-md-4">
+              <h3>Acknowledgements</h3>
+              <ul>
+                <li>
+                  Firstly, there is battles.csv which contains Chris Albon's
+                  "The War of the Five Kings" Dataset, which can be found here:
+                  https://github.com/chrisalbon/war_of_the_five_kings_dataset .
+                  Its a great collection of all of the battles in the series.
+                </li>
+                <li>
+                  Secondly we have character-deaths.csv from Erin Pierce and Ben
+                  Kahle. This dataset was created as a part of their Bayesian
+                  Survival Analysis which can be found here:
+                  http://allendowney.blogspot.com/2015/03/bayesian-survival-analysis-for-game-of.html
+                </li>
+                <li>
+                  Finally we have a more comprehensive character dataset with
+                  character-predictions.csv. This comes from the team at A Song
+                  of Ice and Data who scraped it from
+                  http://awoiaf.westeros.org/ . It also includes their
+                  predictions on which character will die, the methodology of
+                  which can be found here:
+                  https://got.show/machine-learning-algorithm-predicts-death-game-of-thrones
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr/>
+
+      <!-- section contains 3 x bar charts -->
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <!-- title for gender balance bar chart -->
+            <div class="col-xs-12 col-sm-4 text-center">
+              <h3 class="section-paragraph">
+                Number of battles fought over the years
+              </h3>
+              <p>Information is based over a 3 year period from 298 - 300</p>
+            </div>
+            <!-- title for 2nd chard chart -->
+            <div class="col-xs-12 col-sm-4 text-center">
+
+              </p>
+            </div>
+            <!-- title for 3rd chart -->
+            <div class="col-xs-12 col-sm-4 text-center">
+
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- bar chart battles found over 3 years -->
+            <div
+              class="col-xs-12 col-sm-4 text-center"
+              id="battles_fought"
+              class="custom-chart"
+            ></div>
+            <!-- chart number 2 -->
+            <div
+              class="col-xs-12 col-sm-4 text-center"
+              id="chart_no2"
+              class="custom-chart"
+            ></div>
+            <!-- chart number 3 -->
+            <div
+              class="col-xs-12 col-sm-4 text-center"
+              id="chart_no3"
+              class="custom-chart"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- scatter graphs N0. 1 -->
+    </main>
+    <footer>
+      <div id="footer" class="copyright">
+        &copy; 2019 copyright for CI Project - Jacqueline Walsh
+      </div>
+    </footer>
+  </body>
+</html>
