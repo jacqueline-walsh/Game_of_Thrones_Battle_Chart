@@ -39,3 +39,8 @@ function show_battles_fought(ndx) {
     .yAxis()
     .ticks(5);
 }
+
+// reload page when button clicked to reset charts
+function reloadCharts() {
+  window.location.reload();
+}
