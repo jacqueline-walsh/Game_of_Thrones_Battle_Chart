@@ -2,7 +2,11 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5em;
-  font-size: 1.8em;
+  font-size: 1.7em;
+}
+h1,
+h3 {
+  font-weight: 500;
 }
 
 .navbar-default {
@@ -14,8 +18,9 @@ body {
 .header-section {
   padding-top: 0;
   width: 100%;
-  min-height: 1000px;
+  min-height: 500px;
 }
+
 .wave {
   position: relative;
   background-image: url(../images/GoT.jpg);
@@ -36,46 +41,27 @@ body {
   background-repeat: no-repeat;
 }
 
-.section-heading,
-#discipline-selector {
-  display: inline-block;
-  float: none;
-  margin: 0;
-}
-
-.section-heading {
+.data-tip {
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  background-color: rgb(96, 96, 96);
+  color: #fff;
+  font-weight: 300;
   margin-bottom: 50px;
+  box-shadow: 5px 5px 5px 5px #666;
 }
 
-#discipline-selector {
-  margin-left: 15px;
+.btn {
+  width: 100%;
 }
 
-.number-box {
-  margin-right: 75px;
-}
-
-.number-box,
-.fa.fa-gender {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.fa-gender {
-  margin-right: 10px;
+.btn h3:hover {
+  transform: scale(1.5);
 }
 
 .custom-chart {
   margin-bottom: 40px;
-}
-
-.section {
-  border-bottom: 1px solid #e6e6e6;
-  padding: 30px 0;
-}
-
-.section-paragraph {
-  line-height: 1.2;
 }
 
 #footer {
@@ -85,4 +71,39 @@ body {
 
 .copyright {
   color: #e6e6e6;
+}
+
+.tooltip {
+  position: absolute;
+  max-width: 400px;
+  height: auto;
+  padding: 5px;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none; /* MUY IMPORTANTE! */
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+div#attacker_king,
+div#defender_king {
+  margin-top: 80px;
+}
+
+path.link {
+  fill: none;
+  stroke-width: 2px;
+}
+
+path.link.win {
+  stroke: #a6d96a;
+}
+
+path.link.loss {
+  stroke: #ca0020;
 }
