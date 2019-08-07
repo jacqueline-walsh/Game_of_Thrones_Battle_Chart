@@ -91,6 +91,8 @@ h3 {
   font-size: 12px;
 }
 
+div#attacker_size,
+div#defender_size,
 div#attacker_king,
 div#defender_king {
   margin-top: 80px;
