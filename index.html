@@ -101,13 +101,13 @@
           </div>
         </div>
       </section>
-      <h3 class="data-tip">Click or hover on the charts to select data</h3>
-      <!-- section contains 3 x bar charts -->
+      <h3 class="data-tip">Click or hover on the charts to select and analyse data</h3>
+      <!-- section contains 3 x charts -->
       <section class="section">
         <div class="container">
           <div class="row">
             <!-- title for Number of battles fought bar chart -->
-            <div class="col-md-4">
+            <div class="col-md-4 clearfix">
               <h3 class="section-paragraph">
                 Battles over the years
               </h3>
@@ -116,7 +116,7 @@
               <div id="battles_fought" class="custom-chart"></div>
             </div>
             <!-- title for Attacker House Size pie chart -->
-            <div class="col-md-4">
+            <div class="col-md-4 clearfix">
               <h3 class="section-paragraph">Attacker Size</h3>
               <p>
                 The size of the attacker's force. No distinction is made between
@@ -126,7 +126,7 @@
               <div id="attacker_size" class="custom-chart"></div>
             </div>
             <!-- title for Defender House Size pie chart  -->
-            <div class="col-md-4">
+            <div class="col-md-4 clearfix">
               <h3 class="section-paragraph">Defender Size</h3>
               <!-- pie chart for size of attackers -->
               <p>
@@ -144,48 +144,38 @@
         <h3>Click bar to reload charts</h3>
         </button>
       </div>
-
+<!-- Second row -->
+      <!-- section contains 3 x bar charts -->
       <section class="section">
         <div class="container">
           <div class="row">
-
-            <div class="col-md-4">
-              <h3>Attacker King</h3>
-              <p>
-                 The attacker's king. A slash indicators that the king charges over the course of the war. For example, "Joffrey/Tommen Baratheon"
-                is coded as such because one king follows the other in the Iron Throne
-              </p>
               <!-- pie chart for size of attacker king -->
+            <div class="col-md-4 clearfix">
+              <h3 class="section-paragraph">Attacker King</h3>
+              <p>
+                The attacker's king. A slash indicators that the king charges over the course of the war. For example, "Joffrey/Tommen Baratheon" is coded as such because one king follows the other in the Iron Throne
+              </p>
               <div id="attacker_king" class="custom-chart"></div>
             </div>
-
-            <div class="col-md-4">
-              <h3>Defender King</h3>
+            <!-- pie chart for size of defender king -->
+            <div class="col-md-4 clearfix">
+              <h3 class="section-paragraph">Defender King</h3>
               <p>
-                 The defender's king. A slash indicators that the king charges over the course of the war. For example, "Joffrey/Tommen Baratheon"
-                is coded as such because one king follows the other in the Iron Throne
+                The defender's king. A slash indicators that the king charges over the course of the war. For example, "Joffrey/Tommen Baratheon" is coded as such because one king follows the other in the Iron Throne
               </p>
-              <!-- pie chart for size of defender king -->
+            <!-- Bar Chart depicting type of attack -->
               <div id="defender_king" class="custom-chart"></div>
             </div>
-
-            <!-- Bar Chart depicting type of attack -->
-            <div class="col-md-4">
-              <h3>Types of battle attack</h3>
+            <div class="col-md-4 clearfix">
+              <h3 class="section-paragraph">Types of battle attack</h3>
               <p>
-                A classification of the battle's primary type. Categories:
-                pitched_battle: Armies meet in a location and fight. This is
-                also the baseline category. ambush: A battle where stealth or
-                subterfuge was the primary means of attack. siege: A prolonged
-                of a fortied position. razing: An attack against an undefended
-                position
+                A classification of the battle's primary type. Categories: pitched_battle: Armies meet in a location and fight. This is also the baseline category. ambush: A battle where stealth or subterfuge was the primary means of attack. siege: A prolonged of a fortied position. razing: An attack against an undefended position
               </p>
-              <!-- pie chart for size of attackers -->
               <div id="battle-type" class="custom-chart"></div>
             </div>
-          </div>
-        </div>
-      </section>
+          </div><!-- end row-->
+        </div><!-- end container-->
+      </section>  <!--end section-->
     <!-- button mid section to reload charts -->
     <div id="reload-button" class="reload-btn">
       <button type="submit" class="btn data-tip" onClick="reloadCharts()">
@@ -197,8 +187,8 @@
       <section>
         <div class="container">
           <div class="row">
-              <div id="battle_by_house"></div>
-            </div>
+            <div id="battle_by_house"></div>
+          </div>
         </div>
       </section>
     </main>

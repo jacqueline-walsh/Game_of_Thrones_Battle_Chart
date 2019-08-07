@@ -49,11 +49,12 @@ h3 {
   color: #fff;
   font-weight: 300;
   margin-bottom: 50px;
-  box-shadow: 5px 5px 5px 5px #666;
+  box-shadow: 2px 2px 2px 2px rgb(178, 178, 178);
 }
 
 .btn {
   width: 100%;
+  padding: 15px;
 }
 
 .btn h3:hover {

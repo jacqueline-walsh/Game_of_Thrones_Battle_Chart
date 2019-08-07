@@ -37,8 +37,8 @@ function show_battles_fought(ndx) {
   var group = dim.group();
 
   dc.barChart("#battles_fought")
-    .width(400)
-    .height(300)
+    .width(350)
+    .height(400)
     .margins({ top: 10, right: 50, bottom: 30, left: 50 })
     .dimension(dim)
     .group(group)
