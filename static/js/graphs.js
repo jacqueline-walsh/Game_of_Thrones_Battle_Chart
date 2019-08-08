@@ -58,7 +58,7 @@ function show_size_of_attacker(ndx) {
 
   dc.pieChart("#attacker_size")
     .height(300)
-    .radius(120)
+    .radius(130)
     .dimension(win_dim)
     .group(total_wins)
     .transitionDuration(500);
@@ -71,7 +71,7 @@ function show_size_of_defender(ndx) {
 
   dc.pieChart("#defender_size")
     .height(300)
-    .radius(120)
+    .radius(130)
     .dimension(win_dim)
     .group(total_wins)
     .transitionDuration(500);
@@ -79,28 +79,30 @@ function show_size_of_defender(ndx) {
 
 // show attacker king and size as a pie chart
 function show_size_of_attacker_king(ndx) {
-  var win_dim = ndx.dimension(dc.pluck("attacker_king"));
-  var total_wins = win_dim.group().reduceSum(dc.pluck("attacker_size"));
+  var king_dim = ndx.dimension(dc.pluck("attacker_king"));
+  var total_size = king_dim.group().reduceSum(dc.pluck("attacker_size"));
 
   dc.pieChart("#attacker_king")
-    .height(300)
-    .radius(120)
-    .dimension(win_dim)
-    .group(total_wins)
-    .transitionDuration(500);
+    .height(400)
+    .radius(600)
+    .innerRadius(70)
+    .dimension(king_dim)
+    .group(total_size)
+    .transitionDuration(1500);
 }
 
 // show defenders king and size as a pie chart
 function show_size_of_defender_king(ndx) {
-  var win_dim = ndx.dimension(dc.pluck("defender_king"));
-  var total_wins = win_dim.group().reduceSum(dc.pluck("defender_size"));
+  var king_dim = ndx.dimension(dc.pluck("defender_king"));
+  var total_size = king_dim.group().reduceSum(dc.pluck("defender_size"));
 
   dc.pieChart("#defender_king")
-    .height(300)
-    .radius(120)
-    .dimension(win_dim)
-    .group(total_wins)
-    .transitionDuration(500);
+    .height(400)
+    .radius(600)
+    .innerRadius(70)
+    .dimension(king_dim)
+    .group(total_size)
+    .transitionDuration(1500);
 }
 
 // show type of battles fought as a bar chart
@@ -109,7 +111,7 @@ function show_type_battles_fought(ndx) {
   var group = dim.group();
 
   dc.barChart("#battle-type")
-    .width(400)
+    .width(350)
     .height(400)
     .margins({ top: 10, right: 50, bottom: 30, left: 50 })
     .dimension(dim)
