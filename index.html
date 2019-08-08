@@ -18,14 +18,13 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./static/css/style.css" />
-    <script type="text/javascript" src="./static/js/d3.min.js"></script>
+   <script type="text/javascript" src="./static/js/d3.min.js"></script>
     <script
       type="text/javascript"
       src="./static/js/crossfilter.min.js"
     ></script>
     <script type="text/javascript" src="./static/js/dc.min.js"></script>
     <script type="text/javascript" src="./static/js/queue.min.js"></script>
-    <script type="text/javascript" src="./static/js/graphs.js"></script>
   </head>
   <body>
     <!-- navigation bar -->
@@ -182,12 +181,16 @@
         <h3>Click bar to reload charts</h3>
       </button>
     </div>
-    <div id="defender_king2"></div>
+
       <!-- id for house images with tooltip map -->
       <section>
         <div class="container">
           <div class="row">
-            <div id="battle_by_house"></div>
+            <h3>Every battle beteween major houses and groups. Hover the line for details.</h3>
+            <a href="https://jacqueline-walsh.github.io/game-of-thrones/">Click to open in new window</a>
+            <iframe width="100%" height="1000" src="https://jacqueline-walsh.github.io/game-of-thrones/">
+              <p>Your browser does not support iframes.</p>
+            </iframe>
           </div>
         </div>
       </section>
@@ -197,5 +200,6 @@
         &copy; 2019 copyright for CI Project - Jacqueline Walsh
       </div>
     </footer>
+    <script type="text/javascript" src="./static/js/graphs.js"></script>
   </body>
 </html>

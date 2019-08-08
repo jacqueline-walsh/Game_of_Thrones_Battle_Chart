@@ -110,3 +110,7 @@ path.link.win {
 path.link.loss {
   stroke: #ca0020;
 }
+
+iframe {
+  border: 0;
+}
