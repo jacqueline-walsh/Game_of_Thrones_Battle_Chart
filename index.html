@@ -91,6 +91,7 @@
           </div>
         </div>
       </section>
+      <hr>
       <h3 class="data-tip">Click or hover on the charts to select and analyse data</h3>
       <!-- section contains 3 x charts -->
       <section class="section">
@@ -126,14 +127,13 @@
               <div id="defender_size" class="custom-chart"></div>
             </div>
           </div>
+          <!-- button mid section to reload charts -->
+          <div id="reload-button" class="reload-btn">
+            <button type="submit" class="btn btn-sm" onClick="reloadCharts()">reload charts</button>
+          </div>
+          <hr>
         </div>
       </section>
-      <!-- button mid section to reload charts -->
-      <div id="reload-button" class="reload-btn">
-        <button type="submit" class="btn data-tip" onClick="reloadCharts()">
-        <h3>Click bar to reload charts</h3>
-        </button>
-      </div>
 <!-- Second row -->
       <!-- section contains 3 x bar charts -->
       <section class="section">
@@ -166,11 +166,7 @@
           </div><!-- end row-->
         </div><!-- end container-->
       </section>  <!--end section-->
-    <!-- button mid section to reload charts -->
-    <div id="reload-button" class="reload-btn">
-      <button type="submit" class="btn data-tip" onClick="reloadCharts()">
-        <h3>Click bar to reload charts</h3>
-      </button>
+      <hr>
     </div>
 
       <!-- id for house images with tooltip map -->
@@ -179,6 +175,9 @@
           <div class="row">
             <h3>Every battle between major houses and groups. Hover the line for details.</h3>
             <a href="https://jacqueline-walsh.github.io/game-of-thrones/">Click to open in new window</a>
+                <!-- button mid section to reload charts -->
+                <div id="reload-button" class="reload-btn">
+                  <button type="submit" class="btn btn-sm" onClick="reloadCharts()">reload charts</button>
             <iframe width="100%" height="1000" src="https://jacqueline-walsh.github.io/game-of-thrones/">
               <p>Your browser does not support iframes.</p>
             </iframe>
