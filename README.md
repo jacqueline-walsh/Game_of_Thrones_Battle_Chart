@@ -109,7 +109,7 @@ Many languages, frameworks and libraries have been used on this project:
 - DC.js - Library used on top of the of the D3 library for the visualisation and analysis of the data. [dc.js](https://dc-js.github.io/dc.js/)
 - Crossfilter - Libary used to link all graphs to synchronise data and interation. [crossfilter](https://square.github.io/crossfilter/)
 - Cloud9 AWS (Amazon) - cloud hosing used to store images for the force layout images [aws](https://aws.amazon.com/)
-- GitHub - repository and version control used to store all project files (github.com)[https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart]
+- GitHub - repository and version control used to store all project files (github.com](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart]
 
 ## Testing
 
