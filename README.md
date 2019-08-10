@@ -134,10 +134,10 @@ For the project the site has been depoloyed using the hosting platform GitHub.
 
 As all files have been stored on the github respository there has been no need to change any links or alter any configuration on the project. The site has been deployed from the github master branch. As this was a small solo project no branches have been used.
 
-[github repository for dashboard](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart)
+[github repository for dashboard](https://github.com/jacqueline-walsh/Game\_of\_Thrones\_Battle_Chart)
 [github repository for force layout](https://github.com/jacqueline-walsh/game-of-thrones)
 
-[github live Dashboard](https://jacqueline-walsh.github.io/Game_of_Thrones_Battle_Chart/)
+[github live Dashboard](https://jacqueline-walsh.github.io/Game\_of\_Thrones\_Battle\_Chart/)
 [github live force layout](https://jacqueline-walsh.github.io/game-of-thrones/) This site has been integrated into the dashboard via an iframe tag
 
 ## To deploy the project to Github the following steps were taken:
