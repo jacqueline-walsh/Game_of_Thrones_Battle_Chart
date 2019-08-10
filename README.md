@@ -113,35 +113,42 @@ Many languages, frameworks and libraries have been used on this project:
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+At implementation of each section of development the site has been viewed for layout, correctness and usability both on desktop and by resizing for mobile using a chrome extension "for Mobile/Responsive Web Design Tester".
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+- links checked and all found to be working correctly
+- buttons all checked and found to be working correctly
+- each chart checked for linking of all graphs to synchronise data and interation.
+- Force layout chart could prove to be difficult for the a user to navigate but for now has been left available for mobile.
+- all images have been set for responsive and tested to be correct and all include alt tags for screen readability
+- The site has also been tested using the W3C valiation tester W3C_Validation
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+## Issue List
 
-1. Contact form:
-   1. Go to the "Contact Us" page
-   2. Try to submit the empty form and verify that an error message about the required fields appears
-   3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-   4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+| Issue |                                           Description                                            |                                                              Solution                                                              |
+| ----- | :----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
+| 1     | Force layout Chart was open source code created using D3 v3. Dashboard utilises updated version5 | Separate project was built and modified where necessary with the D3 V3 library and incorporated into the dashboard with iframe tag |
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+For the project the site has been depoloyed using the hosting platform GitHub.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+As all files have been stored on the github respository there has been no need to change any links or alter any configuration on the project. The site has been deployed from the github master branch. As this was a small solo project no branches have been used.
 
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+[github repository for dashboard](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart)
+[github repository for force layout](https://github.com/jacqueline-walsh/game-of-thrones)
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+[github live Dashboard](https://jacqueline-walsh.github.io/Game_of_Thrones_Battle_Chart/)
+[github live force layout](https://jacqueline-walsh.github.io/game-of-thrones/) This site has been integrated into the dashboard via an iframe tag
+
+## To deploy the project to Github the following steps were taken:
+
+1. created a new repository project in Github
+2. VSCode text editor was used local to development the dashboard and force layout
+3. Local files were committed using a bash terminal commands: `git status`; `git add .`; `git commit -m "add message"`
+4. Pushed files to the master branch of the git repository using `git push`, which updated the repository
+5. Dashboard was published to github pages from the `master` branch using `settings` tab in the main page of the repository, select `source` as `master branch`, then `save`
+6. While in the settings page of the reporistory a new url link will have been created.
+7. Click url link to view dashboard live in the browser.
 
 ## Credits
 

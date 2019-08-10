@@ -9,13 +9,10 @@
     <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./static/css/dc.min.css" />
     <link rel="stylesheet" href="./static/css/style.css" />
-   <script type="text/javascript" src="./static/js/d3.min.js"></script>
-    <script
-      type="text/javascript"
-      src="./static/js/crossfilter.min.js"
-    ></script>
-    <script type="text/javascript" src="./static/js/dc.min.js"></script>
-    <script type="text/javascript" src="./static/js/queue.min.js"></script>
+    <script src="./static/js/d3.min.js"></script>
+    <script src="./static/js/crossfilter.min.js"></script>
+    <script src="./static/js/dc.min.js"></script>
+    <script src="./static/js/queue.min.js"></script>
   </head>
   <body>
     <!-- navigation bar -->
@@ -26,13 +23,11 @@
         </div>
       </div>
     </nav>
-    <header>
-      <section class="wave header-section"></section>
-    </header>
+    <header class="wave header-section"></header>
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section-heading">Game of Thrones - Battles</h1>
+          <h2 class="section-heading">Game of Thrones - Battles</h2>
           <div class="row">
             <div class="col-md-4">
               <h3>Content</h3>
@@ -43,9 +38,14 @@
               <p>
                 This dataset is based on information from the book series.
               </p>
-              <p>Three great storylines weave through the books, charting the civil war for control of the Seven Kingdoms; the defence of
-              the towering Wall of ice in the uttermost north against the unearthly threat of the Others; and across the Narrow Sea the
-              rise to power of Daenerys Targaryen and the last live dragons in the world.</p>
+              <p>
+                Three great storylines weave through the books, charting the
+                civil war for control of the Seven Kingdoms; the defence of the
+                towering Wall of ice in the uttermost north against the
+                unearthly threat of the Others; and across the Narrow Sea the
+                rise to power of Daenerys Targaryen and the last live dragons in
+                the world.
+              </p>
               <p>
                 The battles.csv which contains Chris Albon's "The War of the
                 Five Kings" Dataset. Its a great collection of all of the
@@ -62,12 +62,11 @@
                 landscape, large number of characters, and its frequent
                 character deaths.
               </p>
-              <hr>
+              <hr />
               <img
                 src="./static/images/battle.gif"
                 alt="battle sceen"
-                class="img-fluid"
-                width="100%"
+                class="img-fluid image-got-giff"
               />
             </div>
             <div class="col-md-4">
@@ -81,18 +80,24 @@
                 >
                 Its a great collection of all of the battles in the series.
               </p>
-              <hr>
+              <hr />
               <!-- selector for region -->
               <h3>Region Selector</h3>
-              <p>The region where the battle takes place. Categories: Beyond the Wall, The North, The Iron Islands, The Riverlands, The Valeof Arryn, The Westerlands, The Crownlands, The Reach, The Stormlands, Dorne</p>
+              <p>
+                The region where the battle takes place. Categories: Beyond the
+                Wall, The North, The Iron Islands, The Riverlands, The Valeof
+                Arryn, The Westerlands, The Crownlands, The Reach, The
+                Stormlands, Dorne
+              </p>
               <div id="region_of_battle"></div>
-              </div>
             </div>
           </div>
         </div>
       </section>
-      <hr>
-      <h3 class="data-tip">Click or hover on the charts to select and analyse data</h3>
+      <hr />
+      <h3 class="data-tip">
+        Click or hover on the charts to select and analyse data
+      </h3>
       <!-- section contains 3 x charts -->
       <section class="section">
         <div class="container">
@@ -128,22 +133,27 @@
             </div>
           </div>
           <!-- button mid section to reload charts -->
-          <div id="reload-button" class="reload-btn">
-            <button type="submit" class="btn btn-sm" onClick="reloadCharts()">reload charts</button>
+          <div class="reload-btn">
+            <button type="submit" class="btn btn-sm" onClick="reloadCharts()">
+              reload charts
+            </button>
           </div>
-          <hr>
+          <hr />
         </div>
       </section>
-<!-- Second row -->
+      <!-- Second row -->
       <!-- section contains 3 x bar charts -->
       <section class="section">
         <div class="container">
           <div class="row">
-              <!-- pie chart for size of attacker king -->
+            <!-- pie chart for size of attacker king -->
             <div class="col-md-4 clearfix">
               <h3 class="section-paragraph">Attacker King</h3>
               <p>
-                The attacker's king. A slash indicators that the king charges over the course of the war. For example, "Joffrey/Tommen Baratheon" is coded as such because one king follows the other in the Iron Throne
+                The attacker's king. A slash indicators that the king charges
+                over the course of the war. For example, "Joffrey/Tommen
+                Baratheon" is coded as such because one king follows the other
+                in the Iron Throne
               </p>
               <div id="attacker_king" class="custom-chart"></div>
             </div>
@@ -151,37 +161,63 @@
             <div class="col-md-4 clearfix">
               <h3 class="section-paragraph">Defender King</h3>
               <p>
-                The defender's king. A slash indicators that the king charges over the course of the war. For example, "Joffrey/Tommen Baratheon" is coded as such because one king follows the other in the Iron Throne
+                The defender's king. A slash indicators that the king charges
+                over the course of the war. For example, "Joffrey/Tommen
+                Baratheon" is coded as such because one king follows the other
+                in the Iron Throne
               </p>
-            <!-- Bar Chart depicting type of attack -->
+              <!-- Bar Chart depicting type of attack -->
               <div id="defender_king" class="custom-chart"></div>
             </div>
             <div class="col-md-4 clearfix">
               <h3 class="section-paragraph">Types of battle attack</h3>
               <p>
-                A classification of the battle's primary type. Categories: pitched_battle: Armies meet in a location and fight. This is also the baseline category. ambush: A battle where stealth or subterfuge was the primary means of attack. siege: A prolonged of a fortied position. razing: An attack against an undefended position
+                A classification of the battle's primary type. Categories:
+                pitched_battle: Armies meet in a location and fight. This is
+                also the baseline category. ambush: A battle where stealth or
+                subterfuge was the primary means of attack. siege: A prolonged
+                of a fortied position. razing: An attack against an undefended
+                position
               </p>
               <div id="battle-type" class="custom-chart"></div>
             </div>
-          </div><!-- end row-->
-        </div><!-- end container-->
-      </section>  <!--end section-->
-      <hr>
-    </div>
+          </div>
+          <!-- end row-->
+        </div>
+        <!-- end container-->
+      </section>
+      <!--end section-->
+      <hr />
 
       <!-- id for house images with tooltip map -->
       <section>
         <div class="container">
           <div class="row">
-            <h3>Every battle between major houses and groups. Hover the line for details.</h3>
-            <a href="https://jacqueline-walsh.github.io/game-of-thrones/">Click to open in new window</a>
-                <!-- button mid section to reload charts -->
-                <div id="reload-button" class="reload-btn">
-                  <button type="submit" class="btn btn-sm" onClick="reloadCharts()">reload charts</button>
-            <iframe width="100%" height="1000" src="https://jacqueline-walsh.github.io/game-of-thrones/">
-              <p>Your browser does not support iframes.</p>
+            <h3>
+              Every battle between major houses and groups. Hover the line for
+              details.
+            </h3>
+            <a href="https://jacqueline-walsh.github.io/game-of-thrones/"
+              >Click to open in new window</a
+            >
+            <!-- button mid section to reload charts -->
+            <div class="reload-btn">
+              <button type="submit" class="btn btn-sm" onClick="reloadCharts()">
+                reload charts
+              </button>
+            </div>
+            <iframe
+              width="100"
+              height="1000"
+              src="https://jacqueline-walsh.github.io/game-of-thrones/"
+            >
             </iframe>
-            <p>Credit to:<a href="https://bl.ocks.org/bsullins/faf637290007a08703b11af8a22f1781">https://bl.ocks.org/bsullins</a></p>
+            <p>
+              Credit to:<a
+                href="https://bl.ocks.org/bsullins/faf637290007a08703b11af8a22f1781"
+                >https://bl.ocks.org/bsullins</a
+              >
+            </p>
           </div>
         </div>
       </section>
@@ -191,6 +227,6 @@
         &copy; 2019 copyright for CI Project - Jacqueline Walsh
       </div>
     </footer>
-    <script type="text/javascript" src="./static/js/graphs.js"></script>
+    <script src="./static/js/graphs.js"></script>
   </body>
 </html>
