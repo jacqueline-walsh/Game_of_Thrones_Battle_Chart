@@ -120,7 +120,7 @@ At implementation of each section of development the site has been viewed for la
 - each chart checked for linking of all graphs to synchronise data and interation.
 - Force layout chart could prove to be difficult for the a user to navigate but for now has been left available for mobile.
 - all images have been set for responsive and tested to be correct and all include alt tags for screen readability
-- The site has also been tested using the W3C valiation tester W3C_Validation
+- The site has also been tested using the W3C valiation tester W3C_Validation for both HTML5 and CSS3. See [supporting file](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart/tree/master/supporting_files)
 
 ## Issue List
 
@@ -134,11 +134,11 @@ For the project the site has been depoloyed using the hosting platform GitHub.
 
 As all files have been stored on the github respository there has been no need to change any links or alter any configuration on the project. The site has been deployed from the github master branch. As this was a small solo project no branches have been used.
 
-[github repository for dashboard](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart)
-[github repository for force layout](https://github.com/jacqueline-walsh/game-of-thrones)
+- [github repository for dashboard](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart)
+- [github repository for force layout](https://github.com/jacqueline-walsh/game-of-thrones)
 
-[github live Dashboard](https://jacqueline-walsh.github.io/Game_of_Thrones_Battle_Chart/)
-[github live force layout](https://jacqueline-walsh.github.io/game-of-thrones/) This site has been integrated into the dashboard via an iframe tag
+- [github live Dashboard](https://jacqueline-walsh.github.io/Game_of_Thrones_Battle_Chart/)
+- [github live force layout](https://jacqueline-walsh.github.io/game-of-thrones/) This site has been integrated into the dashboard via an iframe tag
 
 ## To deploy the project to Github the following steps were taken:
 
