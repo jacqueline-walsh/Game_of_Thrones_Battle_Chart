@@ -46,8 +46,8 @@ The user wants to analyse battles fought per region:
 
 Mockups have been created with the aid of Balsamiq and wireframe tool. Two wireframes have been created for this project, the first showing a desktop model and the second showing mobile.
 
-- [Wireframe - Desktop](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart/blob/master/supporting_files/wireframes/Dashboard-desktop.png)
-- [Wireframe - Mobile](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart/blob/master/supporting_files/wireframes/Dashboard-mobile.png)
+[Wireframe - Desktop](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart/blob/master/supporting_files/wireframes/Dashboard-desktop.png)
+[Wireframe - Mobile](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart/blob/master/supporting_files/wireframes/Dashboard-mobile.png)
 
 ### Excel Spreadsheet
 
