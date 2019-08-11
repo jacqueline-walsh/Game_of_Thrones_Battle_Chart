@@ -113,7 +113,9 @@ Many languages, frameworks and libraries have been used on this project:
 
 ## Testing
 
-At implementation of each section of development the site has been viewed for layout, correctness and usability both on desktop and by resizing for mobile using a chrome extension "for Mobile/Responsive Web Design Tester".
+At implementation of each section of development the site has been viewed for layout, correctness and usability both on desktop and by resizing for mobile using a chrome extension "for Mobile/Responsive Web Design Tester". Screenshots for iphone8 have been taken
+
+- [testing-screenshots](https://github.com/jacqueline-walsh/Game_of_Thrones_Battle_Chart/tree/master/supporting_files/mobile-testing-screenshots)
 
 - links checked and all found to be working correctly
 - buttons all checked and found to be working correctly
