@@ -86,11 +86,11 @@ All features available to the user are given below in order from top of screen t
   - Attacking Commander
   - Defending Commander
 
-The force layout was implemented as a open source project by [B Sullins](https://bl.ocks.org/bsullins/faf637290007a08703b11af8a22f1781) The map was adapted for the project. However a decision was taken to include the map layout in an iframe on the site and develop the map as a separate project. The reason for this decision was due to the site charts being created with D3 version 5 (the latest version), and the map in D3 version 3. Due to the project timescale and the work / skill involved a migration of the map was deemed as unlikely.
+The force layout was developed as an open source project by [B Sullins](https://bl.ocks.org/bsullins/faf637290007a08703b11af8a22f1781). B Sullins layout was created with D3.js version 3, whereas the dashboard charts implemented the latest D3.js library, version 5. B Sullins layout has been adapted for inclusion to this project. However after extensive research for a later version of a force layout template (version 4 was the latest found) a decision was made to include B Sullins layout in an iframe within the dashboard and develop B Sullins layout was developed as a separate project. Due to the project timescale and the work / skill involved a migration of the layout was deemed as unlikely.
 
-Additional features to be implemented in the future:
+### Additional features to be implemented in the future:
 
-As a further development in the future the map could be migrated from D3 version 3 to D3 version 5.
+As a further development in the future, the layout could be migrated from D3.js version 3 to version 5.
 
 ### Features Left to Implement
 
