@@ -52,7 +52,6 @@
                 battles in the series.
               </p>
             </div>
-
             <div class="col-md-4">
               <h3>Context</h3>
               <p>
@@ -63,21 +62,14 @@
                 character deaths.
               </p>
               <hr />
-              <img
-                src="./static/images/battle.gif"
-                alt="battle sceen"
-                class="img-fluid image-got-giff"
-              />
+              <img src="./static/images/battle.gif" alt="battle sceen" class="img-fluid image-got-giff" />
             </div>
             <div class="col-md-4">
               <h3>Acknowledgements</h3>
               <p>
                 The battles.csv which contains Chris Albon's "The War of the
                 Five Kings" Dataset, which can be found at:
-                <a
-                  href="https://github.com/chrisalbon/war_of_the_five_kings_dataset"
-                  >https://github.com/chrisalbon/war_of_the_five_kings_dataset</a
-                >
+                <a href="https://github.com/chrisalbon/war_of_the_five_kings_dataset">https://github.com/chrisalbon/war_of_the_five_kings_dataset</a>
                 Its a great collection of all of the battles in the series.
               </p>
               <hr />
@@ -94,7 +86,7 @@
           </div>
         </div>
       </section>
-      <hr>
+      <hr />
       <h3 class="data-tip">
         Click or hover on the charts to select and analyse data
       </h3>
@@ -104,9 +96,7 @@
           <div class="row">
             <!-- title for Number of battles fought bar chart -->
             <div class="col-md-4 clearfix">
-              <h3 class="section-paragraph">
-                Battles over the years
-              </h3>
+              <h3 class="section-paragraph">Battles over the years</h3>
               <p>Information is based over a 3 year period from 298 - 300</p>
               <!-- bar chart battles found over 3 years -->
               <div id="battles_fought" class="custom-chart"></div>
@@ -134,19 +124,15 @@
           </div>
           <!-- button mid section to reload charts -->
           <div class="reload-btn">
-            <button type="submit" class="btn btn-sm" onClick="reloadCharts()">
-              reload charts
-            </button>
+            <button type="submit" class="btn btn-sm" onClick="reloadCharts()">reload charts</button>
           </div>
           <hr />
         </div>
       </section>
-      <!-- Second row -->
-      <!-- section contains 3 x bar charts -->
       <section class="section">
         <div class="container">
           <div class="row">
-            <!-- pie chart for size of attacker king -->
+            <!-- title for attacker king battle size chart -->
             <div class="col-md-4 clearfix">
               <h3 class="section-paragraph">Attacker King</h3>
               <p>
@@ -155,9 +141,10 @@
                 Baratheon" is coded as such because one king follows the other
                 in the Iron Throne
               </p>
+              <!-- Doughnut pie chart for attacker king battle size -->
               <div id="attacker_king" class="custom-chart"></div>
             </div>
-            <!-- pie chart for size of defender king -->
+            <!-- title for defender king battle size chart -->
             <div class="col-md-4 clearfix">
               <h3 class="section-paragraph">Defender King</h3>
               <p>
@@ -166,9 +153,10 @@
                 Baratheon" is coded as such because one king follows the other
                 in the Iron Throne
               </p>
-              <!-- Bar Chart depicting type of attack -->
+              <!-- Doughnut pie chart for battle size of defender king -->
               <div id="defender_king" class="custom-chart"></div>
             </div>
+            <!-- title type of battle attack chart -->
             <div class="col-md-4 clearfix">
               <h3 class="section-paragraph">Types of battle attack</h3>
               <p>
@@ -179,46 +167,44 @@
                 of a fortied position. razing: An attack against an undefended
                 position
               </p>
+              <!-- Bar Chart depicting type of attack -->
               <div id="battle-type" class="custom-chart"></div>
             </div>
           </div>
-          <!-- end row-->
         </div>
-        <!-- end container-->
       </section>
-      <!--end section-->
-      <hr>
-
-
-
-
-      <!-- id for house images with tooltip map -->
+      <hr />
+      <!-- section for force layout -->
       <section>
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h3>Every battle between major houses and groups - Hover the line for details</h3>
-              <p class="mobile-view">For best experience it is recommended to view this layout on a desktop</p>
-              <a class="open-link" href="https://jacqueline-walsh.github.io/game-of-thrones/" target="_blank">Click to open in new window</a>
-
+              <h3>
+                Every battle between major houses and groups - Hover the line
+                for details
+              </h3>
+              <p class="mobile-view">
+                For best experience it is recommended to view this layout on a
+                desktop
+              </p>
+              <a href="https://jacqueline-walsh.github.io/game-of-thrones/" class="open-link" target="_blank">Click to open in new window</a>
               <!-- button mid section to reload charts -->
               <div class="reload-btn">
-                <button type="submit" class="btn btn-sm" onClick="reloadCharts()">
-                  reload charts
-                </button>
+                <button type="submit" class="btn btn-sm" onClick="reloadCharts()">reload charts</button>
               </div>
-
-
+              <!-- iframe containing force layout -->
               <div>
-                <iframe src="https://jacqueline-walsh.github.io/game-of-thrones/"></iframe>
+                <iframe src="https://jacqueline-walsh.github.io/game-of-thrones/" scrolling="no"></iframe>
               </div>
-
-              <p>Credit to:<a href="https://bl.ocks.org/bsullins/faf637290007a08703b11af8a22f1781">https://bl.ocks.org/bsullins</a></p>
+              <p>
+                Credit to:<a href="https://bl.ocks.org/bsullins/faf637290007a08703b11af8a22f1781">https://bl.ocks.org/bsullins</a>
+              </p>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer>
       <div id="footer" class="copyright">
         &copy; 2019 copyright for CI Project - Jacqueline Walsh
